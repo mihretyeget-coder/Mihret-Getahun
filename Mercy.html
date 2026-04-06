@@ -1,0 +1,197 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihret Getahun Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(to bottom right, #d6f0fa, #fff9c4); /* pale blue to pale yellow */
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background-color: #87cefa; /* pale blue */
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 5px 0 15px;
+            font-size: 1.2rem;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #fdd835; /* pale yellow highlight */
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            border-bottom: 4px solid #87cefa; /* pale blue border */
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Image in about section */
+        .about-img {
+            float: right;
+            width: 200px;
+            border-radius: 50%;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Projects */
+        .project, .skill {
+            background-color: #fff9c4; /* pale yellow cards */
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project:hover, .skill:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Skills section layout */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            flex: 1 1 calc(50% - 20px);
+        }
+
+        @media (max-width: 600px) {
+            .skill {
+                flex: 1 1 100%;
+            }
+            .about-img {
+                float: none;
+                display: block;
+                margin: auto;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #87cefa; /* pale blue */
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Mihret Getahun</h1>
+        <p>Student | Aspiring Fullstack Developer | Grade 11</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="https://images.unsplash.com/photo-1603415526960-fb5f63f6b425?crop=faces&fit=crop&w=200&h=200" alt="Mihret Getahun" class="about-img">
+        <p>My name is <strong>Mihret Getahun</strong>. I am learning in Etege Menen Girls' Boarding Secondary School. I am in grade 11 currently. I have done my student portfolio. My goal is to be the best Fullstack Developer of all. I am passionate to have unique ability in coding.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <img src="photo.png" alt="website portifolio">
+            <h3>Personal portifolio</h3>
+            <p>Created my own portfolio website to showcase my skills and projects using HTML & CSS.</p>
+        </div>
+
+        <div class="project">
+            <img src="photo2.png" alt="website portifolio">
+            <h3>Transportation Group Website</h3>
+            <p>Worked in a group to create a website about transportation, demonstrating teamwork and web design skills.</p>
+        </div>
+
+        <div class="project">
+            <img src="photo3.png" alt="website portifolio">
+            <h3>Periodic Table from Everyday Materials</h3>
+            <p>Designed a creative visual periodic table using materials from my surroundings to represent elements, demonstrating their properties and real-life uses.</p>
+        </div>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h4>Academic Performance</h4>
+                <p>I am a good performer in my academic subjects and a good scorer in most subjects skillfully.</p>
+            </div>
+            <div class="skill">
+                <h4>Web Development</h4>
+                <p>Experience in building websites using HTML, CSS, and basic JavaScript. Passionate about becoming a fullstack developer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:mihretyeget@gmail.com">mihretyeget@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Mihret Getahun Portfolio
+    </footer>
+
+</body>
+</html>
