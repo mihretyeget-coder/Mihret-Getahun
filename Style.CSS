@@ -1,0 +1,115 @@
+/* =========================
+   Global Styles
+========================= */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom right, #d6f0fa, #fff9c4); /* pale blue to pale yellow */
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   Header
+========================= */
+header {
+    background-color: #87cefa; /* pale blue */
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 5px 0 15px;
+    font-size: 1.2rem;
+}
+
+header nav a {
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #fdd835; /* pale yellow highlight */
+}
+
+/* =========================
+   Sections
+========================= */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    border-bottom: 4px solid #87cefa;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* =========================
+   Cards (Projects & Skills)
+========================= */
+.project,
+.skill {
+    background-color: #fff9c4; /* pale yellow cards */
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover,
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   Skills Layout
+========================= */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    flex: 1 1 calc(50% - 20px);
+}
+
+@media (max-width: 600px) {
+    .skill {
+        flex: 1 1 100%;
+    }
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #87cefa;
+    color: white;
+    margin-top: 40px;
+}
